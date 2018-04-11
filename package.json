@@ -1,0 +1,17 @@
+{
+  "name": "tooltip-admin-tool",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "build": "node ./src/domainReplacer.js"
+  },
+  "author": "Vasikaran <vasikaran.25@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cross-unzip": "^0.2.1",
+    "express": "^4.16.3",
+    "win-7zip": "^0.1.1"
+  }
+}

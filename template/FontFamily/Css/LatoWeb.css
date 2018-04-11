@@ -1,0 +1,48 @@
+/* Webfont: Lato-Regular */
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Light */
+@font-face {
+    font-family: 'LatoWebLight';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Light.woff2') format('woff2'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Thin */
+@font-face {
+    font-family: 'LatoWebThin';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Thin.eot'); /* IE9 Compat Modes */
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Thin.woff2') format('woff2'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Thin.woff') format('woff'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Semibold */
+@font-face {
+    font-family: 'LatoWebSemibold';
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+         url('chrome-extension://__MSG_@@extension_id__/fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

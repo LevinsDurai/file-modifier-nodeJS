@@ -1,0 +1,79 @@
+{
+    "name": "Zoho Desk ASAP Extension (Beta)",
+    "manifest_version": 2,
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "description": "A handy tool that takes customer support closer to your website visitors by providing quick access to help articles. Note: This extension works only for help centers powered by Zoho Desk. ",
+    "version": "0.0.0.2",
+    "icons": {
+        "16": "Tooltip_disble_icon.png",
+        "48": "Tooltip_disble_icon.png",
+        "128": "Tooltip_disble_icon.png"
+    },
+    "web_accessible_resources": [
+        "/fonts/*.eot",
+        "fonts/*.eot?#iefix",
+        "fonts/*.woff",
+        "fonts/*.woff2",
+        "fonts/*.ttf"
+    ],
+
+    "permissions": [
+        "webNavigation",
+        "cookies",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_title": "Zoho Desk ASAP Extension (Beta)"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "css": ["Tooltip1.css", "./FontFamily/Css/LatoWeb.css"],
+        "js": [
+
+            "./i18n/i18n_en.js",
+
+            "ZohoDeskEditor_Tooltip_Init.js",
+            "ZDTT_edit.js",
+            "previewer.js",
+            "content.js",
+            "zdattAPIcallbacks.js",
+            "shadowRootStyles.js",
+            "zdttTemplete.js",
+            "zdttErrorPopup.js",
+            "intermediater.js",
+            "RequestAPI.js",
+            "position.js",
+            "zdatGuide.js",
+
+
+            "./editorFiles/toolSVG.js",
+            "./editorFiles/squire-raw.js",
+            "./editorFiles/purify.js",
+            "./editorFiles/initialEditorEventsSetUp.js",
+            "./editorFiles/undoredo.js",
+            "./editorFiles/Table_Grid.js",
+            "./editorFiles/advlink.js",
+            "./editorFiles/code.js",
+            "./editorFiles/htmlview.js",
+            "./editorFiles/initialEditorSetUp.js",
+            "./editorFiles/inserthtml.js",
+            "./editorFiles/insertoptions.js",
+            "./editorFiles/object.js",
+            "./editorFiles/quote.js",
+            "./editorFiles/styletext.js",
+            "./editorFiles/table.js",
+            "./editorFiles/table_resize.js",
+            "./editorFiles/toolbar.js",
+            "./editorFiles/uploadimage.js",
+            "./editorFiles/ze.js",
+            "./editorFiles/zeContextMenu.js",
+            "./editorFiles/zedropdown.js",
+            "./editorFiles/zerange.js"
+        ]
+    }]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Zoho desk ASAP Extention download Tool .</title>
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </head>
+    <body>
+        <div class="bg-container-contact100" style="background-image: url(images/bg-01.jpg);"></div>
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
+                    <span>ASAP extension</span>
+                </div>
+                <span class="contact100-form validate-form">
+                    <div class="discription">
+                        Enter the domain name of the app server for which you want the Chrome extension. The zip file of the extension will be provided for download.<br/><br/>
+                        <span class="noteCommon">(<b class="boldNote">Note:</b> If you do not enter a domain name, the default extension for the <b class="domainBold">desk.zoho.com</b> app server will be provided.)</span>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <input id="domainName" class="input100" type="text" placeholder="App server name (eg : desk.zoho.com)">
+                        <span class="focus-input100"></span>
+                        <label class="label-input100" for="name">
+                            <svg class="svg-inline--fa fa-server fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="server" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor" d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"></path>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn" id="submitBtn" onclick="extentionDownloader()">
+                        Download Extension
+                        </button>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <!--  -->
+        <script>
+            function extentionDownloader(event){
+                let dName = "";
+                let inputElem = document.getElementById("domainName");
+                if(inputElem){
+                    dName = inputElem.value ;
+                }
+                let url = window.location.origin +"/download?domainName="+dName ;
+                window.location.replace(url);
+            };
+            function keyUpChecker(e){
+                if(e.keyCode==13){
+                    extentionDownloader();
+                }
+            };
+            let sBtn = document.getElementById("submitBtn");
+            let dnInp = document.getElementById("domainName");
+            if(sBtn){
+                sBtn.click = extentionDownloader;
+            }
+            if(dnInp){
+                dnInp.onkeyup = keyUpChecker;
+            }
+
+        </script>
+    </body>
+</html>
